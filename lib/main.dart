@@ -372,9 +372,9 @@ class _MyAppState extends State<MyApp> {
     return path_0;
   }
 
-  Path drawCake() {
-    
-  }
+  // Path drawCake() {
+
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -486,6 +486,8 @@ class _MyAppState extends State<MyApp> {
           Align(
             alignment: Alignment.bottomCenter,
             child: ConfettiWidget(
+              minimumSize: const Size(50, 40),
+              maximumSize: const Size(50, 40),
               confettiController: _controllerBottomCenter,
               blastDirection: -pi / 2,
               emissionFrequency: 0.01,
